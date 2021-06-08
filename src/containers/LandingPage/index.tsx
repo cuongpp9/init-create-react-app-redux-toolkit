@@ -1,5 +1,5 @@
 import * as React from 'react';
 
-export function LandingPage() {
-  return <div>asda</div>;
+export default function LandingPage() {
+  return <div className="text-center">asda</div>;
 }

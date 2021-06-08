@@ -8,17 +8,15 @@
 
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
-import { GlobalStyle } from '../styles/global-styles';
-import { HomePage } from '../containers/HomePage/Loadable';
-import { LandingPage } from '../containers/LandingPage';
-import { NotFoundPage } from '../containers/NotFoundPage';
 import { useTranslation } from 'react-i18next';
+import { GlobalStyle } from '../styles/global-styles';
+import Router from './Router';
 
 export function App() {
   const { i18n } = useTranslation();
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
+    <div>
       <Helmet
         titleTemplate="%s - React Boilerplate"
         defaultTitle="React asdasdBoilerplate"
@@ -29,17 +27,8 @@ export function App() {
           content="A React Boilerplat asdasde application"
         />
       </Helmet>
-
-      <Switch>
-        <Route exact path={process.env.PUBLIC_URL + '/'} component={HomePage} />
-        <Route
-          exact
-          path={process.env.PUBLIC_URL + '/landing'}
-          component={LandingPage}
-        />
-        <Route component={NotFoundPage} />
-      </Switch>
+      <Router />
       <GlobalStyle />
-    </BrowserRouter>
+    </div>
   );
 }
