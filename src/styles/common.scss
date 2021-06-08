@@ -1,0 +1,31 @@
+$blue-color: #4b64ff;
+$gradient-background: linear-gradient(155.27deg, #4b64ff 0%, #3c4db6 100%);
+
+.blue-color {
+  color: $blue-color;
+}
+
+.btn-base {
+  height: 55px;
+  width: 164px;
+  border-radius: 28px;
+  background: $gradient-background;
+  color: #ffffff;
+}
+
+.btn-login {
+  color: #3f52c7;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.83px;
+  line-height: 20px;
+}
+
+.btn:focus {
+  outline: 0 !important;
+  box-shadow: none;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #CCCCCC !important;
+}

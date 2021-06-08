@@ -25,6 +25,7 @@ import { configureAppStore } from 'store/configureStore';
 import { ThemeProvider } from 'styles/theme/ThemeProvider';
 
 import reportWebVitals from 'reportWebVitals';
+import 'styles/index.scss';
 
 // Initialize languages
 import './locales/i18n';

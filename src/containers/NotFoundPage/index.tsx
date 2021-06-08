@@ -1,6 +1,5 @@
 import * as React from 'react';
 import styled from 'styled-components/macro';
-import { P } from './P';
 import { Link } from 'components/Link';
 import { NavBar } from 'components/NavBar';
 import { Helmet } from 'react-helmet-async';
@@ -22,7 +21,7 @@ export function NotFoundPage() {
           </span>
           4
         </Title>
-        <P>Page not found.</P>
+        <div>Page not found.</div>
         <Link to={process.env.PUBLIC_URL + '/'}>Return to Home Page</Link>
       </Wrapper>
     </>

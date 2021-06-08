@@ -1,0 +1,25 @@
+.landing-bg {
+  margin-top: -2px;
+}
+
+.landing-content {
+  color: red !important;
+  position: relative;
+  align-items: center;
+  .content {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .slider-title {
+    height: 94px;
+    // width: 555px;
+    color: #000000;
+    font-size: 40px;
+    letter-spacing: -1.67px;
+    line-height: 47px;
+  }
+}
